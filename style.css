@@ -1,0 +1,47 @@
+.base-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgb(68, 194, 36);
+}
+.main {
+  background-color: yellow;
+  text-align: center;
+  width: 50%;
+  height: 10%;
+}
+.main > h1 {
+  color: black;
+}
+#start-game {
+  border-radius: 10%;
+  transition-duration: 0.4s;
+}
+#start-game:hover {
+  background-color: rgb(15, 170, 162);
+}
+.play-game {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+.player-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.player {
+  width: 20%;
+}
