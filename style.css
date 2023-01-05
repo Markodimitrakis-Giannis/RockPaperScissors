@@ -43,7 +43,6 @@ body {
 
 #new-game {
   border-radius: 10%;
-  margin-top: 5%;
   transition-duration: 0.4s;
   background-color: rgb(233, 147, 42);
 }
@@ -58,7 +57,8 @@ body {
   width: 10%;
   height: 5%;
   display: flex;
-  justify-content: center;
+  gap: 50%;
+  justify-content: space-between;
   width: auto;
 }
 .player-stats {
@@ -66,6 +66,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  margin-top: 50px;
   width: 100%;
   height: 20%;
 }

@@ -35,12 +35,16 @@ const computerSelection = () => {
 };
 
 function playGame() {
-  const playerChoice = playerSelection();
+  const playerChoice = prompt("Rock,Paper or Scissor?", "rock").toLowerCase();
   playerSel.innerHTML = playerChoice;
   const computerChoice = computerSelection();
   computerSel.innerHTML = computerChoice;
 
-  checkWinner(playerChoice, computerChoice, playerBox, computerBox);
+  if (playerChoice == ("rock" || "paper" || "scissor"))
+    checkWinner(playerChoice, computerChoice, playerBox, computerBox);
+  else {
+    return;
+  }
 }
 
 function checkWinner(playerChoice, computerChoice, player, computer) {
