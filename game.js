@@ -10,7 +10,7 @@ const computerSel = document.querySelector(
 );
 
 function resetScore() {
-  playerScore = 0;
+  playerScore = 2;
   playerBox.innerHTML = 0;
   playerSel.innerHTML = "";
   computerScore = 0;
